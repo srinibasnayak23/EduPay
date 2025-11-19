@@ -112,18 +112,52 @@ Backend (Express + MongoDB)
 ```
 ---
 
-## 📡 API Overview (27 Endpoints)
+## Complete API Endpoint Map
 
-### **Authentication (3)**
+### Authentication
 ```
 POST   /api/auth/register
 POST   /api/auth/login
 GET    /api/auth/me
 ```
-### **Courses (8)**
-### **Enrollments (5)**
-### **Payments (4)**
-### **Users (5)**
+
+### Courses
+```
+GET    /api/courses/approved           (Public - published courses)
+GET    /api/courses/:id                (Public - course details)
+GET    /api/courses                    (Admin only - all courses)
+GET    /api/courses/teacher/my-courses (Teacher only)
+POST   /api/courses                    (Teacher only)
+PUT    /api/courses/:id                (Teacher only)
+DELETE /api/courses/:id                (Teacher only)
+PUT    /api/courses/approve/:id        (Admin only)
+```
+
+### Enrollments
+```
+POST   /api/enrollments/enroll/:courseId    (Student)
+GET    /api/enrollments/my-courses          (Student)
+GET    /api/enrollments/teacher/list        (Teacher)
+PUT    /api/enrollments/approve/:id         (Teacher)
+GET    /api/enrollments/all                 (Admin)
+```
+
+### Payments
+```
+POST   /api/payments/create-order/:enrollmentId (Student)
+POST   /api/payments/verify                     (Student)
+GET    /api/payments/teacher                    (Teacher)
+GET    /api/payments/all                        (Admin)
+```
+
+### Users
+```
+GET    /api/users             (Admin)
+GET    /api/users/:id         (Admin)
+PUT    /api/users/me          (Any authenticated user - own profile)
+PUT    /api/users/:id         (Admin)
+DELETE /api/users/:id         (Admin)
+```
 All endpoints are fully implemented and tested.
 
 ---
