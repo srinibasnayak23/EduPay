@@ -264,19 +264,5 @@ VITE_API_URL=http://localhost:5000
 VITE_RAZORPAY_KEY=your_key
 ```
 
----
 
-## 🧭 Roadmap
-- Course Reviews & Ratings
-- Progress Tracking
-- Email Notifications
-- Deployment Pipeline
-- Logging + Monitoring
-
----
-
-## 🏁 Status: **Production Ready**
-All backend‑frontend integrations complete, tested, and validated.
-
-If you want a **PDF version**, **GitHub‑optimized badges**, or **dark‑themed README**, just tell me!
 
