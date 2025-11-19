@@ -2,7 +2,6 @@
 A scalable MERN-based learning platform with secure authentication, payment integration, role-based access, and course delivery system.
 
 ## 📸 Screenshots
-Here are recommended screenshot placeholders (replace image paths as needed):
 
 ### 🏠 Home / Landing Page
 ![Landing Page](./screenshots/landing.png)
@@ -179,7 +178,6 @@ All endpoints are fully implemented and tested.
 3. Payment verified via signature
 4. Enrollment activated
 5. Transaction record created
-6. Teacher earnings updated
 
 ---
 
