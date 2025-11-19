@@ -69,12 +69,6 @@ Here are recommended screenshot placeholders (replace image paths as needed):
 - dotenv
 - Prettier + ESLint
 
---- – Complete Backend & Frontend Implementation
-
-EduPay is a full‑stack web application designed for managing online courses, enrollments, payments, and admin analytics. This project includes a production‑ready backend (Express + MongoDB) and a fully aligned frontend (React + Vite).
-
----
-
 ## 🚀 Features
 
 ### **🧩 Backend (Express + MongoDB)**
