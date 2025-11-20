@@ -3,20 +3,23 @@ A scalable MERN-based learning platform with secure authentication, payment inte
 
 ## 📸 Screenshots
 
-### 🏠 Home / Landing Page
+### 🏠 Login / Login Page
 ![Login Page](./screenshots/login_page.png)
 
-### 🏠 Home / Landing Page
-![Landing Page](./screenshots/landing.png)
-
 ### 🎓 Student Dashboard
-![Student Dashboard](./screenshots/student-dashboard.png)
+![Dashboard Page](./screenshots/student_dashboard.png)
+
+### 🎓 All Course
+![All course](./screenshots/all_course.png)
+
+### 🎓 Student Profile
+![Student Profile](./screenshots/student_profile.png)
 
 ### 👨‍🏫 Teacher Dashboard
-![Teacher Dashboard](./screenshots/teacher-dashboard.png)
+![Teacher Dashboard](./screenshots/teacher_dashboard.png)
 
 ### 🛠️ Admin Panel
-![Admin Panel](./screenshots/admin-panel.png)
+![Admin Panel](./screenshots/admin_panel.png)
 
 ---
 
@@ -39,8 +42,8 @@ A scalable MERN-based learning platform with secure authentication, payment inte
                         ↓
            ┌───────────────────────────┐
            │        MongoDB Atlas      │
-           │  Users / Courses / Enroll│
-           │  Payments / Transactions │
+           │  Users / Courses / Enroll │
+           │  Payments                 │
            └───────────────────────────┘
 ```
 
@@ -65,11 +68,11 @@ A scalable MERN-based learning platform with secure authentication, payment inte
 - MongoDB + Mongoose
 
 ### **DevOps / Other Tools**
-- Thunder Client / Postman
+- Postman
 - Git & GitHub
-- npm / yarn
+- npm 
 - dotenv
-- Prettier + ESLint
+- Prettier
 
 ## 🚀 Features
 
@@ -258,6 +261,3 @@ RAZORPAY_KEY_SECRET=your_secret
 VITE_API_URL=http://localhost:5000
 VITE_RAZORPAY_KEY=your_key
 ```
-
-
-
