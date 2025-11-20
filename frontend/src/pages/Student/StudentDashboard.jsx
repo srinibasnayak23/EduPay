@@ -60,9 +60,9 @@ export default function StudentDashboard() {
               </h1>
               <p className="text-slate-600 mt-3 text-lg">Here's your learning journey at a glance</p>
             </div>
-            <button className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-3 rounded-xl font-semibold hover:shadow-lg hover:-translate-y-1 transition-all duration-300 whitespace-nowrap w-full sm:w-auto">
+            {/* <button className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-3 rounded-xl font-semibold hover:shadow-lg hover:-translate-y-1 transition-all duration-300 whitespace-nowrap w-full sm:w-auto">
               + New Course
-            </button>
+            </button> */}
           </div>
         </div>
 

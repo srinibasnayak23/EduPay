@@ -4,6 +4,9 @@ A scalable MERN-based learning platform with secure authentication, payment inte
 ## 📸 Screenshots
 
 ### 🏠 Home / Landing Page
+![Login Page](./screenshots/login_page.png)
+
+### 🏠 Home / Landing Page
 ![Landing Page](./screenshots/landing.png)
 
 ### 🎓 Student Dashboard
