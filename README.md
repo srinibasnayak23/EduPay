@@ -239,15 +239,6 @@ EduPay/
 
 ---
 
-## 📘 Documentation Included
-- `BACKEND_FRONTEND_ALIGNMENT.md`
-- `BACKEND_IMPLEMENTATION_STATUS.md`
-- `QUICK_START_GUIDE.md`
-- `DETAILED_CHANGES_LOG.md`
-- `QUICK_REFERENCE.md`
-
----
-
 ## 🌐 Environment Variables
 ### Backend `.env`
 ```
