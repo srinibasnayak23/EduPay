@@ -75,7 +75,7 @@ export default function BrowseCourses() {
     }
 
     try {
-      // 1) create enrollment (pending) on backend
+      // 1 create enrollment (pending) on backend
       const enrollmentRes = await createEnrollment(course._id);
       const enrollment =
         enrollmentRes.data?.enrollment ||
@@ -86,7 +86,7 @@ export default function BrowseCourses() {
         throw new Error("Failed to create enrollment");
       }
 
-      // 2) create razorpay order for that enrollment
+      // 2 create razorpay order for that enrollment
       const orderRes = await createRazorOrder(enrollment._id);
       const order =
         orderRes.data?.order || orderRes.data.order || orderRes.data;
@@ -95,7 +95,7 @@ export default function BrowseCourses() {
         throw new Error("Failed to create order");
       }
 
-      // 3) show Razorpay checkout
+      // 3 show Razorpay checkout
       const options = {
         key: orderRes.data?.key || import.meta.env.VITE_RAZORPAY_KEY,
         amount: order.amount,
