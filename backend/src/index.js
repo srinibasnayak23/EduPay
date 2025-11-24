@@ -15,7 +15,8 @@ const app = express();
 
 // Middlewares
 app.use(cors({
-  origin: "http://localhost:5173",  // frontend URL
+  origin: "https://edupay-frontend.onrender.com",
+  //origin: "http://localhost:5173",  // frontend URL
   credentials: true,                 // allow cookies, auth headers
 }));
 app.use(express.json());
