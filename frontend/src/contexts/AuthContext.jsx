@@ -10,6 +10,12 @@ export default function AuthProvider({ children }) {
 
   useEffect(() => {
     async function fetchUser() {
+      const token = localStorage.getItem("token");
+      if (!token) {
+        setUser(null);
+        setLoading(false);
+        return;
+      }
       try {
         const res = await getProfile();
         setUser(res.data.user);
