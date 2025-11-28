@@ -108,7 +108,7 @@ export default function BrowseCourses() {
           try {
             const token = localStorage.getItem("token");
             const verifyRes = await fetch(
-              "http://localhost:5000/api/payments/verify",
+              "https://edupay-backend-z15t.onrender.com/api/payments/verify",
               {
                 method: "POST",
                 headers: {
