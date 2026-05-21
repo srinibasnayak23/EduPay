@@ -20,7 +20,7 @@ export default function BrowseCourses() {
   const { user } = useContext(AuthContext);
   const { addToast } = useContext(ToastContext);
 
-  const categories = ["all", "programming", "design", "business", "health"];
+  const categories = ["all", "programming", "design", "business", "health", "marketing", "data-science"];
 
   useEffect(() => {
     async function load() {
@@ -61,10 +61,22 @@ export default function BrowseCourses() {
   }, [user]);
 
   const filteredCourses = courses.filter((course) => {
+    const normalizedSearch = searchTerm.trim().toLowerCase();
+    const normalizedCategory = selectedCategory.toLowerCase();
+
+    const title = (course?.title || "").toLowerCase();
+    const description = (course?.description || "").toLowerCase();
+    const courseCategory = (course?.category || "").toLowerCase();
+
     const matchesSearch =
-      course.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      course.description.toLowerCase().includes(searchTerm.toLowerCase());
-    return matchesSearch;
+      !normalizedSearch ||
+      title.includes(normalizedSearch) ||
+      description.includes(normalizedSearch);
+
+    const matchesCategory =
+      normalizedCategory === "all" || courseCategory === normalizedCategory;
+
+    return matchesSearch && matchesCategory;
   });
 
   // enrollment flow: create enrollment record then create Razorpay order
@@ -215,6 +227,7 @@ export default function BrowseCourses() {
             <button
               key={cat}
               onClick={() => setSelectedCategory(cat)}
+              
               className={`px-5 py-2.5 rounded-full font-semibold whitespace-nowrap transition-all duration-300 ${
                 selectedCategory === cat
                   ? "bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg hover:shadow-xl -translate-y-1"
