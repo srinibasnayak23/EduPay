@@ -21,7 +21,7 @@ export default function BrowseCourses() {
   const { addToast } = useContext(ToastContext);
 
   const categories = ["all", "programming", "design", "business", "health", "marketing", "data-science"];
-
+ 
   useEffect(() => {
     async function load() {
       try {
