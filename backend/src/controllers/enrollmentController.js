@@ -62,7 +62,7 @@ export const getMyCourses = async (req, res) => {
     res.status(200).json({
       success: true,
       enrollments,
-      total: enrollments.length,
+      totalEnrolled: enrollments.length,
       totalCourses : totalCourses
     });
   } catch (error) {
