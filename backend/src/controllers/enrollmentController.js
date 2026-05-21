@@ -57,10 +57,13 @@ export const getMyCourses = async (req, res) => {
       status: "active",
     }).populate("course").populate('student', 'name email');
 
+    const totalCourses = await Course.countDocuments({ status: "approved" });
+
     res.status(200).json({
       success: true,
       enrollments,
-      total: enrollments.length
+      total: enrollments.length,
+      totalCourses : totalCourses
     });
   } catch (error) {
     res.status(500).json({ success: false, message: error.message });
